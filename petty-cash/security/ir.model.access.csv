@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_petty_cash_request_user,petty.cash.request.user,model_petty_cash_request,base.group_user,1,1,1,0
+access_petty_cash_request_manager,petty.cash.request.manager,model_petty_cash_request,base.group_erp_manager,1,1,1,1
+access_petty_cash_request_admin,petty.cash.request.admin,model_petty_cash_request,base.group_system,1,1,1,1
+access_petty_cash_request_accountant,petty.cash.request.accountant,model_petty_cash_request,account.group_account_user,1,1,1,1
+
+access_petty_cash_category_user,petty.cash.category.user,model_petty_cash_category,base.group_user,1,1,1,0
+access_petty_cash_category_manager,petty.cash.category.manager,model_petty_cash_category,base.group_erp_manager,1,1,1,1
+access_petty_cash_category_admin,petty.cash.category.admin,model_petty_cash_category,base.group_system,1,1,1,1
+access_petty_cash_category_accountant,petty.cash.category.accountant,model_petty_cash_category,account.group_account_user,1,1,1,1
+
+access_cash_denomination_wizard_user,cash.denomination.wizard.user,model_cash_denomination_wizard,base.group_user,1,1,1,1

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Main Menu -->
+        <menuitem id="petty_cash_menu_root"
+                  name="Petty Cash Management"
+                  sequence="10"
+                  web_icon="petty_cash_management,static/description/icon.png"/>
+
+        <!-- Petty Cash Requests Menu -->
+        <menuitem id="menu_petty_cash_requests"
+                  name="Petty Cash Requests"
+                  parent="petty_cash_menu_root"
+                  action="action_petty_cash_requests"
+                  sequence="20"/>
+
+        <!-- IOU Request Menu-->
+         <menuitem id="iou_requests"
+                   name="IOU Requests"
+                   parent="petty_cash_menu_root"
+                   sequence="20"/>
+
+        <!-- Configuration Submenu -->
+        <menuitem id="menu_petty_cash_config"
+                  name="Configuration"
+                  parent="petty_cash_menu_root"
+                  sequence="100"/>
+
+        <!-- Categories Menu under Configuration -->
+        <menuitem id="menu_petty_cash_categories"
+                  name="Categories"
+                  parent="menu_petty_cash_config"
+                  action="action_petty_cash_categories"
+                  sequence="10"/>
+    </data>
+</odoo>
