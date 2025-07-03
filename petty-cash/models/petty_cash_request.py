@@ -23,7 +23,7 @@ class PettyCashRequest(models.Model):
         string='Request Number',
         copy=False,
         readonly=True,
-        default='New',
+        default='New Petty Cash Request',
         tracking=True,
     )
 
