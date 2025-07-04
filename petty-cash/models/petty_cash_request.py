@@ -42,6 +42,8 @@ class PettyCashRequest(models.Model):
         ('float_manager_approval_pending', 'Float Manager Approval Pending'),
         ('hod_approved', 'HOD Approved'),
         ('float_manager_approved', 'Float Manager Approved'),
+        ('hod_rejected', 'HOD Rejected'),
+        ('float_manager_rejected', 'Float Manager Rejected'),
     ], string='Status', default='draft', tracking=True) 
 
     request_by = fields.Many2one(
